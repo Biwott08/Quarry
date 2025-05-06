@@ -1,0 +1,131 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #4a7c59;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  background-color: white;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(80, 54, 54, 0.1);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #463897;
+  color: white;
+  border: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #3b6549;
+}
+
+/* Footer */
+footer {
+  background-color: #4a7c59;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  section {
+    flex: 1 1 45%;
+  }
+}
+
+/* In your style.css */
+input:focus, select:focus {
+    outline: 2px solid #4a7c59;
+    background-color: #f0fff0;
+  }
+  
+  button:focus {
+    outline: 2px solid #3b6549;
+  }
+  button, input, select {
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #3b6549;
+  }

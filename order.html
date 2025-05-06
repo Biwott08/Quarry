@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place Your Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Order Quarry Stones</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <form id="orderForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="stoneType">Select Stone Type:</label>
+        <select id="stoneType" required>
+          <option value="">--Choose--</option>
+          <option value="Machine-Cut">Machine-Cut Stones</option>
+          <option value="Ballast">Ballast</option>
+          <option value="Blocks">Building Blocks</option>
+          <option value="Sand">Sand</option>
+        </select>
+
+        <label for="quantity">Quantity (in tons):</label>
+        <input type="number" id="quantity" min="1" required />
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>We'll call you to confirm your order. Delivery available within 24 hours.</p>
+  </footer>
+  <p id="errorMsg"></p>
+  <div id="ordersContainer"></div>
+  <script src="order.js"></script>
+</body>
+</html>
